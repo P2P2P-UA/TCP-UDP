@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee3dbef9-9815-466b-ba5c-041b5a05cd2e" name="Default Changelist" comment="working client server comm">
+    <list default="true" id="ee3dbef9-9815-466b-ba5c-041b5a05cd2e" name="Default Changelist" comment="working file transfer">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ServerThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Server.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +54,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -102,7 +107,7 @@
       <updated>1619129024731</updated>
       <workItem from="1619129025975" duration="1212000" />
       <workItem from="1619173733114" duration="5884000" />
-      <workItem from="1619300314152" duration="2427000" />
+      <workItem from="1619300314152" duration="4610000" />
     </task>
     <task id="LOCAL-00001" summary="First version, non working (Connection error)">
       <created>1619130237483</created>
@@ -118,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619184395492</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="working file transfer">
+      <created>1619302923079</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619302923079</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First version, non working (Connection error)" />
     <MESSAGE value="working client server comm" />
-    <option name="LAST_COMMIT_MESSAGE" value="working client server comm" />
+    <MESSAGE value="working file transfer" />
+    <option name="LAST_COMMIT_MESSAGE" value="working file transfer" />
   </component>
 </project>

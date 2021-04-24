@@ -3,33 +3,27 @@ import java.net.*;
 class Client {
 
     public static void main(String[] args) throws Exception {
-        String sentence;
-        String modifiedSentence;
-
-        System.out.println("Enter the name of the file you would like to transfer: ");
-        BufferedReader inFromUser =
-                new BufferedReader(new InputStreamReader(System.in));
-        Socket clientSocket = new Socket("localhost", 6789);
-
-        DataOutputStream outToServer =
-                new DataOutputStream(clientSocket.getOutputStream());
-        BufferedReader inFromServer =
-                new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-        sentence = inFromUser.readLine();
-        outToServer.writeBytes(sentence + '\n');
-        modifiedSentence = inFromServer.readLine();
-        System.out.println("FROM SERVER: " + modifiedSentence);
-
-        if (modifiedSentence.equals("FILE EXISTS"))
-        {
-            InputStream is = clientSocket.getInputStream();
-            FileOutputStream fr = new FileOutputStream("D:\\SEM6\\Distributed\\FT test\\test.txt");
-            byte size[] = new byte[5000];
-            is.read(size,0,size.length);
-            fr.write(size, 0,size.length);
+        try (Socket socket = new Socket("localhost", 6789)) {
+            OutputStream output = socket.getOutputStream();
+            PrintWriter writer = new PrintWriter(output, true);
+            BufferedReader inFromUser =
+                    new BufferedReader(new InputStreamReader(System.in));
+            String text;
+            do {
+                System.out.println("Enter text: ");
+                text = inFromUser.readLine();
+                writer.println(text);
+                InputStream input = socket.getInputStream();
+                BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+                String time = reader.readLine();
+                System.out.println(time);
+            } while (!text.equals("bye"));
+            socket.close();
+        } catch (UnknownHostException ex) {
+            System.out.println("Server not found: " + ex.getMessage());
+        } catch (IOException ex) {
+            System.out.println("I/O error: " + ex.getMessage());
         }
-        else System.out.println("Error: no such file found");
-        clientSocket.close();
-
     }
+
 }
