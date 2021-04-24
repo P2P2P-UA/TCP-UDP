@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee3dbef9-9815-466b-ba5c-041b5a05cd2e" name="Default Changelist" comment="First version, non working (Connection error)">
+    <list default="true" id="ee3dbef9-9815-466b-ba5c-041b5a05cd2e" name="Default Changelist" comment="working client server comm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Server.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +23,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1rXiq4Ge46xbbuUJpqGxYhLd6Ph" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -69,15 +73,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,7 +101,8 @@
       <option name="presentableId" value="Default" />
       <updated>1619129024731</updated>
       <workItem from="1619129025975" duration="1212000" />
-      <workItem from="1619173733114" duration="4507000" />
+      <workItem from="1619173733114" duration="5884000" />
+      <workItem from="1619300314152" duration="2427000" />
     </task>
     <task id="LOCAL-00001" summary="First version, non working (Connection error)">
       <created>1619130237483</created>
@@ -108,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619130237483</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="working client server comm">
+      <created>1619184395492</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619184395492</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First version, non working (Connection error)" />
-    <option name="LAST_COMMIT_MESSAGE" value="First version, non working (Connection error)" />
+    <MESSAGE value="working client server comm" />
+    <option name="LAST_COMMIT_MESSAGE" value="working client server comm" />
   </component>
 </project>
