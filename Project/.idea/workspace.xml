@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee3dbef9-9815-466b-ba5c-041b5a05cd2e" name="Default Changelist" comment="half multithread">
+    <list default="true" id="ee3dbef9-9815-466b-ba5c-041b5a05cd2e" name="Default Changelist" comment="working multithread">
+      <change afterPath="$PROJECT_DIR$/src/main/java/UDPClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UDPServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UDPThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Server.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +55,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.UDPClient">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Client" />
       <module name="Socket Comm" />
@@ -74,19 +77,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="UDPClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UDPClient" />
+      <module name="Socket Comm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UDPClient" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.Main" />
@@ -104,7 +117,8 @@
       <workItem from="1619129025975" duration="1212000" />
       <workItem from="1619173733114" duration="5884000" />
       <workItem from="1619300314152" duration="4786000" />
-      <workItem from="1619342934204" duration="1106000" />
+      <workItem from="1619342934204" duration="1395000" />
+      <workItem from="1619381773335" duration="3283000" />
     </task>
     <task id="LOCAL-00001" summary="First version, non working (Connection error)">
       <created>1619130237483</created>
@@ -134,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619305130205</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="working multithread">
+      <created>1619344328252</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619344328252</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +178,7 @@
     <MESSAGE value="working client server comm" />
     <MESSAGE value="working file transfer" />
     <MESSAGE value="half multithread" />
-    <option name="LAST_COMMIT_MESSAGE" value="half multithread" />
+    <MESSAGE value="working multithread" />
+    <option name="LAST_COMMIT_MESSAGE" value="working multithread" />
   </component>
 </project>
