@@ -9,15 +9,20 @@ class Client {
             BufferedReader inFromUser =
                     new BufferedReader(new InputStreamReader(System.in));
             String text;
-            do {
-                System.out.println("Enter text: ");
-                text = inFromUser.readLine();
-                writer.println(text);
-                InputStream input = socket.getInputStream();
-                BufferedReader reader = new BufferedReader(new InputStreamReader(input));
-                String time = reader.readLine();
-                System.out.println(time);
-            } while (!text.equals("bye"));
+            System.out.println("Connect to server? type ''yes'' or ''no''");
+            text = inFromUser.readLine();
+            if(text.equals("yes")) {
+                System.out.println("New client connected");
+                do {
+                    System.out.println("Enter text: ");
+                    text = inFromUser.readLine();
+                    writer.println(text);
+                    InputStream input = socket.getInputStream();
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+                    String fromServer = reader.readLine();
+                    System.out.println("SERVER: "+fromServer);
+                } while (!text.equals("bye"));
+            }
             socket.close();
         } catch (UnknownHostException ex) {
             System.out.println("Server not found: " + ex.getMessage());

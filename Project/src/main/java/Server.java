@@ -10,9 +10,6 @@ class Server {
         try (ServerSocket welcomeSocket = new ServerSocket(6789);) {
             while (true) {
                 connectionSocket = welcomeSocket.accept();
-                OutputStream output = connectionSocket.getOutputStream();
-                PrintWriter writer = new PrintWriter(output, true);
-                writer.println("New client connected");
                 new ServerThread(connectionSocket).start();
             }
         }

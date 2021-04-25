@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee3dbef9-9815-466b-ba5c-041b5a05cd2e" name="Default Changelist" comment="working file transfer">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ServerThread.java" afterDir="false" />
+    <list default="true" id="ee3dbef9-9815-466b-ba5c-041b5a05cd2e" name="Default Changelist" comment="half multithread">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Server.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +103,8 @@
       <updated>1619129024731</updated>
       <workItem from="1619129025975" duration="1212000" />
       <workItem from="1619173733114" duration="5884000" />
-      <workItem from="1619300314152" duration="4610000" />
+      <workItem from="1619300314152" duration="4786000" />
+      <workItem from="1619342934204" duration="1106000" />
     </task>
     <task id="LOCAL-00001" summary="First version, non working (Connection error)">
       <created>1619130237483</created>
@@ -130,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619302923079</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="half multithread">
+      <created>1619305130205</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619305130205</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +156,7 @@
     <MESSAGE value="First version, non working (Connection error)" />
     <MESSAGE value="working client server comm" />
     <MESSAGE value="working file transfer" />
-    <option name="LAST_COMMIT_MESSAGE" value="working file transfer" />
+    <MESSAGE value="half multithread" />
+    <option name="LAST_COMMIT_MESSAGE" value="half multithread" />
   </component>
 </project>
